@@ -28,7 +28,7 @@ public class UserController {
         System.out.println("User saved"+user);
         return userService.saveUser(user);
     }
-    @GetMapping("/alUser")
+    @GetMapping("/allUser")
     public List<User> getAllUser(){
         return userService.findAllUser();
     }
